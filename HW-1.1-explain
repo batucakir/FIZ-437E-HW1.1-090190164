@@ -16,3 +16,5 @@ Bütün görsellerin içerisinde olduğu veri setinin linki=
 Veri setinin bulundugu pathleri girdim.
 
 Veri setindeki görselleri çekerek array içerisine labelları ve pixel yoğunluklarını sıralı koyacak fonksiyon yazdım.
+
+Eğitim verisini ve test verisini 2 farklı array içerisinde topladım.
