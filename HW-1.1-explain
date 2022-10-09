@@ -1,0 +1,18 @@
+ITU 2022-2023_GUZ FIZ-437E Howework 1.1 / Batuhan Çakır 090190164
+
+Veri setindeki görselleri internet üzerinden tek tek bularak topladım. 
+
+Veri seti içerisinde 500 agaç, 500 top görseli bulunuyor.
+
+Tüm görselleri 100x100 boyutuna küçülttüm.
+
+Tüm görselleri PIL kütüphanesini kullanarak grileştirdim.
+
+Veri setini 450+450 (%90) egitim seti, 50+50 (%10) test seti olarak grupladım.
+
+Bütün görsellerin içerisinde olduğu veri setinin linki=
+    https://drive.google.com/drive/folders/118VcLvCXIlxxAkZc_9aPbjU40xLi00sy?usp=sharing
+
+Veri setinin bulundugu pathleri girdim.
+
+Veri setindeki görselleri çekerek array içerisine labelları ve pixel yoğunluklarını sıralı koyacak fonksiyon yazdım.
