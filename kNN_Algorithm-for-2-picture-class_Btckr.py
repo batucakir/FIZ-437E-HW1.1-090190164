@@ -4,12 +4,12 @@ import numpy as np
 import glob
 from PIL import Image
 
-#verinin bulundugu kisimlar
+#data road
 egitim_agac_yolu = glob.glob('C:/Users/BATUHAN/Desktop/grey-Source/egitim_seti/agac_egitimi/*')
 egitim_top_yolu  = glob.glob('C:/Users/BATUHAN/Desktop/grey-Source/egitim_seti/top_egitimi/*')
 test_agac_yolu   = glob.glob('C:/Users/BATUHAN/Desktop/grey-Source/test_seti/agac_testi/*')
 test_top_yolu    = glob.glob('C:/Users/BATUHAN/Desktop/grey-Source/test_seti/top_testi/*')
-"""data grey
+"""data graying
 def grilestirme(path)
     for i in os.listdir(path):
         if i.endswith('jpg'):
@@ -20,14 +20,14 @@ def grilestirme(path)
 
 # function input and calculate density of the data 
 def image_input(path):
-    sum_array = np.zeros((100,100)) ##SOOOORRRR ???????????????????????????
+    sum_array = np.zeros((100,100))
     for foto in path: 
-        image = Image.open(foto).convert('L')  #0 gri okuyor
-        sum_array = sum_array + image #
+        image = Image.open(foto).convert('L')  
+        sum_array = sum_array + image 
     return sum_array
 
 array_image_egitim_agac = image_input(egitim_agac_yolu)/450              
-array_image_egitim_top  = image_input(egitim_top_yolu)/450      #matrisleri gorsel sayisina boldum yogunluk matrisi oldu  
+array_image_egitim_top  = image_input(egitim_top_yolu)/450      #divided number of the data, density matrix
 
 # function input and calculate density of the data , i used k = 4
 def kNN_pixel(path, sinif):
